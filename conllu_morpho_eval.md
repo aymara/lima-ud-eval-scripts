@@ -51,7 +51,7 @@ $ ./conllu_morpho_eval.py -g en_ewt-ud-test.conllu -p en_ewt-ud-pred.conllu -e |
 `PROPN:3.27` means that `3.27%` of nouns were predicted as proper nouns.
 
 ## Filter words
-###Without filter:
+### Without filter:
 
 ```
 $ ./conllu_morpho_eval.py -g en_ewt-ud-test.conllu -p en_ewt-ud-pred.conllu | grep 'Number='
@@ -60,7 +60,7 @@ $ ./conllu_morpho_eval.py -g en_ewt-ud-test.conllu -p en_ewt-ud-pred.conllu | gr
      Number=_	    16459	    16450	    98.94	    98.89	    98.92
 ```
 
-###Only for nouns:
+### Only for nouns:
 ```
 $ ./conllu_morpho_eval.py -g en_ewt-ud-test.conllu -p en_ewt-ud-pred.conllu -f upos=NOUN | grep 'Number='
 Filter: upos=NOUN
@@ -69,7 +69,7 @@ Filter: upos=NOUN
      Number=_	        0	      114	     0.00	     0.00	     0.00
 ```
 
-###Only for proper nouns:
+### Only for proper nouns:
 ```
 $ ./conllu_morpho_eval.py -g en_ewt-ud-test.conllu -p en_ewt-ud-pred.conllu -f upos=PROPN | grep 'Number='
 Filter: upos=PROPN
